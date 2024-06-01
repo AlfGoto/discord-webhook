@@ -12,7 +12,8 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 30px;
-    color: var(--white)
+    color: var(--white);
+    font-family: sans-serif;
 }
 
 body {
@@ -20,9 +21,16 @@ body {
     height: 100svh;
     overflow: hidden;
     display: flex;
+    flex-direction: column;
+    gap: 5svh;
     justify-content: center;
     align-items: center;
     background-color: var(--lightBlack);
+
+    /* h1{
+        font-size: 0px;
+
+    } */
 
     form {
         width: 50svw;
