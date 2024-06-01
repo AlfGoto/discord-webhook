@@ -19,6 +19,7 @@ async function sendContact(ev) {
 
     const webhookUrl = 'https://discord.com/api/webhooks/1246439941358223420/w3ym8DpDW0JBSVlT7jJzIYqrQIL5_DvXUZC5tgdq8PikZ4cyNV1tO37HgCyX_XzMBoIn';
 
+    document.getElementById('messageInput').value = ''
     const response = await fetch(webhookUrl, {
         method: 'POST',
         headers: {
@@ -28,7 +29,6 @@ async function sendContact(ev) {
     });
 
     if (response.ok) {
-        document.getElementById('messageInput').value = ''
         alert('Message envoyé !')
 
     } else {
