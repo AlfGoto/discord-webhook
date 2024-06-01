@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LE GAMING</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form onsubmit="sendContact(event)">
+        <select class="input" name="sujet" id="sujet">
+            <option value="Message">Message</option>
+            <option value="A propos du Goulag">A propos du Goulag</option>
+            <option value="MAbus de modérationessage">Abus de modération</option>
+        </select>
+        <div>
+            <textarea class="input" id="messageInput" rows="3" placeholder="Ton message"></textarea>
+        </div>
+        <button class="input" type="submit" class="btn btn-primary">Envoyer</button>
+    </form>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
