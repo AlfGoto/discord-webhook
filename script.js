@@ -3,8 +3,8 @@ async function sendContact(ev) {
 
     console.log('BUTTON')
 
-    const sujet = document.getElementById('sujet').value;
-    const senderMessage = document.getElementById('messageInput').value;
+    let sujet = document.getElementById('sujet').value;
+    let senderMessage = document.getElementById('messageInput').value;
 
     if(sujet = ''){
         alert('Ecrit quelque chose au moins')
@@ -28,8 +28,8 @@ async function sendContact(ev) {
     });
 
     if (response.ok) {
+        document.getElementById('messageInput').value = ''
         alert('Message envoyé !')
-        const senderMessage = document.getElementById('messageInput').value = ''
 
     } else {
         alert('bon là ya un soucis');
